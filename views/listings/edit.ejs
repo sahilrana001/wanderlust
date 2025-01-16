@@ -1,0 +1,59 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <div class="row">
+        <div class="col-8 offset-2">
+            <form method="post" action="/listings/<%= card._id %>/edit" enctype="multipart/form-data">
+                <br>
+                <h2>Edit your listing</h2>
+                <br>
+                <div  class="mb-3">
+                    <label for="title" class="form-label"> Title</label>
+                    <input type="text" name="title" id="title" value=" <%= card.title %>" class="form-control">
+        
+                </div>
+                <div  class="mb-3">
+                    <label for="description22" class="form-label">Description</label>
+                    <textarea class="form-control" id="description22" rows="3" value= "<%= card.description %>" name="description"></textarea>
+                </div>
+                <div class="mb-3">
+                    <h3>Original Image</h3>
+                    <div class="card" style="max-width: 18rem;">
+                        <img src="<%= card.image.url %>" alt="Original Image" class="img-thumbnail w-100">
+                    </div>
+                </div>
+                <div  class="mb-3">
+                    <label for="image" class="form-label">Image</label>
+                    <input type="file" name="image" id="image" value=" <%=card.image.url  %>" class="form-control ">
+        
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-md-4"  >
+                        <label for="price" class="form-label">Price</label>
+                        <input type="number" name="price" id="price" value=" <%=card.price %> " class="form-control">
+            
+            
+                    </div>
+                    <div class="mb-3 col-md-8"  >
+                        <label for="location" class="form-label">Location</label>
+                        <input type="text" name="location" id="location" value=" <%= card.location %>" class="form-control ">
+            
+                    </div>
+                </div>
+                <div class="mb-3" >
+        
+                  <label for="country" class="form-label">Country</label>
+                    <input type="text" name="country" id="country" value=" <%= card.country  %> " class="form-control">
+        
+        
+                </div>
+                <br><br>
+                <button type="submit" class="btn btn-dark add-btn">Edit</button>
+                <br>
+                <br>
+                <br>
+            </form>
+        </div>
+        
+    </div>
+    
+</body>

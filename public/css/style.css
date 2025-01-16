@@ -1,0 +1,220 @@
+body{
+    min-height: 100vh;
+    font-family: "Poppins", serif !important;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.container{
+    flex: 1;
+}
+.card{
+    border: none !important;
+    
+}
+.card-body{
+    margin: 0 !important;
+}
+.card img{
+    border-radius:1rem ;
+    width: 100% !important;
+    height: 20rem;
+}
+.row a{
+    text-decoration: none;
+}
+
+
+
+.navbar{
+    height: 4rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+}
+/* #navbarNav{
+    background-color:white;
+    color: blac
+    k;
+} */
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222 !important;
+}
+footer{
+   height: 8rem;
+    width: 100%;
+}
+
+.f-info{
+    height: 100%;
+    background-color: #ebebeb;
+    /* border-top: 0.8px solid rgb(180, 177, 177); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    
+}
+.f-social i{
+    font-size: 1.4rem;
+    margin: 5px;
+
+}
+
+.f-info-link a{
+    text-decoration: none;
+    color: #222222;
+    
+    
+}
+.f-info-link a:hover{
+    color: rgb(132, 76, 206);
+    text-decoration: underline;
+}
+.f-info-company{
+    font-size: 0.8rem;
+}
+
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+.edit{
+    
+    display: flex;
+    margin-right: 3rem;
+    text-decoration: none !important;
+    border: none;
+    color: white;
+}
+.foot-btn form{
+    margin-left: 10rem;
+    border: none !important;
+}
+.foot-btn a{
+   text-decoration: none;
+  
+}
+.foot-btn{
+    display: flex;
+}
+
+@media (max-width : 540px){
+     .cards .row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+}
+@media (min-width: 540px) and (max-width: 764px) {
+    .row-cols-md-2 > .col {
+      flex: 0 0 50%; 
+      max-width: 50%;
+    }
+  }
+
+.navbar-collapse.show{
+    background-color:#f5f5f5;
+    
+
+}
+
+
+.navbar-nav .nav-item:hover {
+    background-color:  #fe424d !important; /* Change background to red on hover */
+}
+  
+  .navbar-nav .nav-link {
+    color: black; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+  
+.navbar-nav .nav-item:hover .nav-link{
+    color: white; 
+}
+ 
+  
+/* toggle Ui */
+
+.filters {
+     
+      width: 100%;
+      z-index: 1000;
+     
+      
+     
+}
+
+.filters .ui {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 15px;
+      
+}
+.filters .ui i {
+    font-size: 1.5rem;
+}
+
+.filters .filter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      opacity: 0.7;
+}
+.filter:hover{
+        opacity: 1;
+    }
+
+.filters .filter .icon {
+      font-size: 20px;
+}
+
+ .filters .tax {
+      margin-left: auto;
+      align-self: center;
+      font-size: 1.2rem;
+     
+     
+ }
+
+
+.tax-info{
+        display:none;
+ }
+
+ .btn-outline-custom {
+        border-color: #fe424d;
+        color: #fe424d;
+        color: white;
+        background-color: #fe424d;
+ }
+ .btn-outline-custom:hover {
+        background-color: #fe424d;
+        color: white;
+        border-color: #fe424d;
+    }
+
+/* text switch */
+
+.custom-switch:checked {
+    background-color: #fe424d !important;
+    border-color: #fe424d !important;
+   
+   
+  }
+  .custom-switch {
+   
+    border-color: #7e8183; /* Dark gray border */
+  }
+  
